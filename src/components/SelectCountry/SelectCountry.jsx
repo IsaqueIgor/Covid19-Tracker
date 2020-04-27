@@ -3,7 +3,7 @@ import { NativeSelect, FormControl } from '@material-ui/core';
 
 import { fetchCountries } from '../../api';
 
-import styles from './SelectCountry.css';
+import './SelectCountry.css';
 
 const Countries = ({ handleCountryChange }) => {
   const [countries, setCountries] = useState([]);
@@ -17,7 +17,7 @@ const Countries = ({ handleCountryChange }) => {
   }, []);
 
   return (
-    <FormControl className={styles.formControl}>
+    <FormControl className="formControl">
       <NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
         <option value="">Global</option>
         {countries.map((country, i) => <option key={i} value={country}>{country}</option>)}

@@ -21,6 +21,10 @@ This project was developed with the following technologies:
 
 ## 💻  Layout
 
+<h1 align="center">
+    <img alt="layout" title="#layout" src="./src/assets/layout.png" width="380px" />
+</h1>
+
 ## 💻  API
 
  [API](https://covid19.mathdro.id/api)

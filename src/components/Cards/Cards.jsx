@@ -1,9 +1,8 @@
 import React from 'react';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import CountUp from 'react-countup';
-import cx from 'classnames';
 
-import styles from './Cards.css';
+import './Cards.css';
 
 const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     if (!confirmed) {
@@ -11,9 +10,9 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     }
 
     return(
-        <div className={styles.container}>
+        <div className='container'>
         <Grid container spacing={3} justify="center">
-          <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
+          <Grid item xs={12} md={3} component={Card} className={'infected'}>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Infected
@@ -29,7 +28,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               </Typography>
             </CardContent>
           </Grid>
-          <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered)}>
+          <Grid item xs={12} md={3} component={Card} className={'recovered'}>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Recovered
@@ -45,7 +44,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               </Typography>
             </CardContent>
           </Grid>
-          <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
+          <Grid item xs={12} md={3} component={Card} className={'deaths'}>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Deaths

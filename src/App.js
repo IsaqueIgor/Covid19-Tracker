@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {Info, Chart, Countries} from './components';
-import styles from './App.module.css';
-import { fetchData } from './api'
+import './App.module.css';
+import { fetchData } from './api';
 
 //as I`m using data time visualization I`ll be using class, which make my life easier
 class App extends React.Component {
@@ -27,7 +27,7 @@ class App extends React.Component {
     const { data, country } = this.state;
 
     return (
-      <div className={styles.container}>
+      <div className='container'>
         <Info data={data} />
         <Countries handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country}/>
